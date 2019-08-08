@@ -26,7 +26,7 @@ var pluckFirstLineFromFileAsync = function(filePath) {
 // This function should retrieve the status code of a GET request to `url`
 var getStatusCodeAsync = function(url) {
   return new Promise((resolve, reject) => {
-    request.get(url, (err, response, body) => {
+    request.get(url, (err, response) => {
       if (err) {
         return reject(err);
       }
